@@ -1,0 +1,78 @@
+.
+.
+MySql - 
+.
+.
+- level 1: mySql
+- level 1.1 - basic
+
+
+.
+.
+- level 1: mySql
+- level 1.1 - ...
+.
+
+-  
+
+
+- SQL is a standard language for storing, manipulating and retrieving data in databases.
+
+- Sql Types: 
+-- mariaDb
+-- MySQL 
+-- SQL Server 
+-- MS Access
+-- Oracle
+-- Sybase
+-- Informix
+-- Postgres.
+
+
+- MySql DDL, DML, DCL, TCL.
+
+- DDL (Data Definition Language) is a commands which are used to define the database.
+-- CREATE - 
+-- DROP - 
+-- ALTER -
+-- TRUNCATE -
+-- COMMENT - 
+--  RENAME- 
+
+
+- DML (Data Manipulation Language) is a commands that deal with the manipulation of data present in the database.
+-- SELECT -
+-- INSERT -
+-- UPDATE -
+-- DELETE -
+
+
+- DCL (Data Control Language) is a commands that deal with the rights, permissions and other controls of the database system. 
+-- GRANT
+-- INVOKE
+
+
+- TCL ( Transaction Control Language) is the consists of those commands which mainly deal with the transaction of the database.
+-- 
+
+.
+.
+- Cascading refers to the way CSS applies one style on top of another.
+-- Style Sheets control the look and feel of web documents.
+-- CSS apply specific styles to specific HTML elements.
+
+-!- file extension format type:
+    html - "*.html"
+    css - "*.css"
+    javaScript - "*.js"
+
+
+.
+.
+- level 1.1 - ...
+.
+
+
+
+--- example: Content Models:
+    <html5-Content-Models.jpeg>

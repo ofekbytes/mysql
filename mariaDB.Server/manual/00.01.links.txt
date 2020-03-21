@@ -1,0 +1,39 @@
+---[links.txt]---
+
+
+---[mysql]---
+
+https://www.mysqltutorial.org/
+
+https://www.w3schools.com/sql/
+
+https://www.tutorialspoint.com/mysql/index.htm
+
+
+https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/
+
+https://www.javatpoint.com/mysql-tutorial
+
+https://www.guru99.com/mysql-tutorial.html
+
+https://www.edureka.co/blog/mysql-tutorial/
+
+
+
+---[mariadb]---
+
+// #1: //
+https://www.tutorialspoint.com/mariadb/index.htm
+
+// #2: //
+https://www.guru99.com/mariadb-tutorial-install.html
+
+// #3: //
+https://www.javatpoint.com/mariadb-tutorial
+
+// #4: //
+
+
+
+
+
