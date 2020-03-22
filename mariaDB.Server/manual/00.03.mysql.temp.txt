@@ -117,3 +117,185 @@ MariaDB [mysql]> show columns from user;
 44 rows in set (0.00 sec)
 
 
+------------------------------------------------------------------------------------
+---[rtfm-bugs]---
+https://askubuntu.com/questions/1029177/error-1698-28000-access-denied-for-user-rootlocalhost-at-ubuntu-18-04
+
+https://dba.stackexchange.com/questions/209996/error-1698-28000-access-denied-for-user-rootlocalhost
+
+https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
+
+
+
+
+---[create]---
+
+//## show-create-user
+https://mariadb.com/kb/en/show-create-user/
+
+//## how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+
+
+
+///## create a user + password
+mysql> CREATE USER 'jron' IDENTIFIED BY 'NoamOfir@1974.com';
+Query OK, 0 rows affected (0.21 sec)
+
+mysql> select user, plugin from user;
++------------------+-----------------------+
+| user             | plugin                |
++------------------+-----------------------+
+| root             | auth_socket           |
+| mysql.session    | mysql_native_password |
+| mysql.sys        | mysql_native_password |
+| debian-sys-maint | mysql_native_password |
+| jron             | mysql_native_password |
++------------------+-----------------------+
+5 rows in set (0.10 sec)
+
+
+///## Only allow access from localhost 
+///## (this is the most secure and common configuration you will use for a web application):
+
+GRANT USAGE ON *.* TO 'jron'@localhost IDENTIFIED BY 'mypasswNoamOfir@1974.com';
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+
+///## To allow access to MySQL server from any other computer on the network:
+mysql> GRANT USAGE ON *.* TO 'jron'@'%' IDENTIFIED BY 'NoamOfir@1974.com';
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> use demo;
+Database changed
+
+//## create table
+mysql> CREATE TABLE products(product_id INT NOT NULL AUTO_INCREMENT, product_name VARCHAR(100) NOT NULL, product_manufacturer VARCHAR(40) NOT NULL, submission_date DATE, PRIMARY KEY ( product_id ) );
+Query OK, 0 rows affected (1.37 sec)
+
+//## insert record
+
+
+
+
+///## Grant all privileges to a user on a specific database
+GRANT ALL privileges ON `calendar`.* TO 'jron'@localhost;
+
+
+mysql> flush privileges;
+
+
+
+
+
+
+mysql> SHOW PRIVILEGES;
++-------------------------+---------------------------------------+-------------------------------------------------------+
+| Privilege               | Context                               | Comment                                               |
++-------------------------+---------------------------------------+-------------------------------------------------------+
+| Alter                   | Tables                                | To alter the table                                    |
+| Alter routine           | Functions,Procedures                  | To alter or drop stored functions/procedures          |
+| Create                  | Databases,Tables,Indexes              | To create new databases and tables                    |
+| Create routine          | Databases                             | To use CREATE FUNCTION/PROCEDURE                      |
+| Create temporary tables | Databases                             | To use CREATE TEMPORARY TABLE                         |
+| Create view             | Tables                                | To create new views                                   |
+| Create user             | Server Admin                          | To create new users                                   |
+| Delete                  | Tables                                | To delete existing rows                               |
+| Drop                    | Databases,Tables                      | To drop databases, tables, and views                  |
+| Event                   | Server Admin                          | To create, alter, drop and execute events             |
+| Execute                 | Functions,Procedures                  | To execute stored routines                            |
+| File                    | File access on server                 | To read and write files on the server                 |
+| Grant option            | Databases,Tables,Functions,Procedures | To give to other users those privileges you possess   |
+| Index                   | Tables                                | To create or drop indexes                             |
+| Insert                  | Tables                                | To insert data into tables                            |
+| Lock tables             | Databases                             | To use LOCK TABLES (together with SELECT privilege)   |
+| Process                 | Server Admin                          | To view the plain text of currently executing queries |
+| Proxy                   | Server Admin                          | To make proxy user possible                           |
+| References              | Databases,Tables                      | To have references on tables                          |
+| Reload                  | Server Admin                          | To reload or refresh tables, logs and privileges      |
+| Replication client      | Server Admin                          | To ask where the slave or master servers are          |
+| Replication slave       | Server Admin                          | To read binary log events from the master             |
+| Select                  | Tables                                | To retrieve rows from table                           |
+| Show databases          | Server Admin                          | To see all databases with SHOW DATABASES              |
+| Show view               | Tables                                | To see views with SHOW CREATE VIEW                    |
+| Shutdown                | Server Admin                          | To shut down the server                               |
+| Super                   | Server Admin                          | To use KILL thread, SET GLOBAL, CHANGE MASTER, etc.   |
+| Trigger                 | Tables                                | To use triggers                                       |
+| Create tablespace       | Server Admin                          | To create/alter/drop tablespaces                      |
+| Update                  | Tables                                | To update existing rows                               |
+| Usage                   | Server Admin                          | No privileges - allow connect only                    |
++-------------------------+---------------------------------------+-------------------------------------------------------+
+31 rows in set (0.11 sec)
+
+
+
+-----------------------------------------------------------------------------------
+
+mysql> use mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| columns_priv              |
+| db                        |
+| engine_cost               |
+| event                     |
+| func                      |
+| general_log               |
+| gtid_executed             |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| innodb_index_stats        |
+| innodb_table_stats        |
+| ndb_binlog_index          |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| server_cost               |
+| servers                   |
+| slave_master_info         |
+| slave_relay_log_info      |
+| slave_worker_info         |
+| slow_log                  |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transition_type |
+| user                      |
++---------------------------+
+31 rows in set (0.00 sec)
+
+//## update user plugin 
+mysql> UPDATE user SET plugin='' WHERE User='jron';
+Query OK, 2 rows affected (0.17 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> UPDATE user SET plugin='' WHERE User='jron';
+
+mysql>  FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> delete from mysql.user where user='jron' and host='localhost';
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select user, plugin, host from mysql.user;
++------------------+-----------------------+-----------+
+| user             | plugin                | host      |
++------------------+-----------------------+-----------+
+| root             | auth_socket           | localhost |
+| mysql.session    | mysql_native_password | localhost |
+| mysql.sys        | mysql_native_password | localhost |
+| debian-sys-maint | mysql_native_password | localhost |
++------------------+-----------------------+-----------+
+4 rows in set (0.00 sec)
+
+-----------------------------------------------------------------------------------

@@ -39,3 +39,21 @@ https://www.javatpoint.com/mariadb-tutorial
 
 
 
+---[rtfm-bugs]---
+https://askubuntu.com/questions/1029177/error-1698-28000-access-denied-for-user-rootlocalhost-at-ubuntu-18-04
+
+https://dba.stackexchange.com/questions/209996/error-1698-28000-access-denied-for-user-rootlocalhost
+
+https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
+
+
+
+---[create]---
+
+//## show-create-user
+https://mariadb.com/kb/en/show-create-user/
+
+//## how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+
+
