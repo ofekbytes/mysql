@@ -3,6 +3,9 @@
 
 ---[mysql]---
 
+https://www.edureka.co/blog/mysql-tutorial/#DCL
+
+
 https://www.mysqltutorial.org/
 
 https://www.w3schools.com/sql/
@@ -32,7 +35,6 @@ https://www.guru99.com/mariadb-tutorial-install.html
 https://www.javatpoint.com/mariadb-tutorial
 
 // #4: //
-
 
 
 

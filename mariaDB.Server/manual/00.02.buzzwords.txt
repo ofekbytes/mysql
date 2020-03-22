@@ -1,0 +1,37 @@
+
+
+---[mySql - buzzwords]---
+
+
+---[b]---
+
+---[c]---
+
+---[d]---
+
+- Database - 
+--  A database is an organized collection of data, generally stored and accessed electronically from a computer system.  
+--  < https://en.wikipedia.org/wiki/Database >
+
+- DDL -- (Data Definition Language) -- 
+-- ddl is a commands which are used to define the database.
+-- <>
+
+- DML -- (Data Manipulation Language) -- 
+-- dml is a commands that deal with the manipulation of data present in the database.
+-- <>
+
+- DCL -- (Data Control Language) -- 
+-- dcl is a commands that deal with the rights, permissions and other controls of the database system.
+-- <>
+
+- TCL -- (Transaction Control Language) --
+-- tcl is the consists of those commands which mainly deal with the transaction of the database.
+-- <>
+
+- DBMS -- (database management system) -- 
+-- dbms is
+-- <>
+
+
+---[a]---

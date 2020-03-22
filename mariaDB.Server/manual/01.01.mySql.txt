@@ -18,7 +18,7 @@ MySql -
 
 - SQL is a standard language for storing, manipulating and retrieving data in databases.
 
-- Sql Types: 
+- Sql DataBase Server Types: 
 -- mariaDb
 -- MySQL 
 -- SQL Server 
@@ -37,7 +37,7 @@ MySql -
 -- ALTER -
 -- TRUNCATE -
 -- COMMENT - 
---  RENAME- 
+-- RENAME- 
 
 
 - DML (Data Manipulation Language) is a commands that deal with the manipulation of data present in the database.
@@ -54,18 +54,6 @@ MySql -
 
 - TCL ( Transaction Control Language) is the consists of those commands which mainly deal with the transaction of the database.
 -- 
-
-.
-.
-- Cascading refers to the way CSS applies one style on top of another.
--- Style Sheets control the look and feel of web documents.
--- CSS apply specific styles to specific HTML elements.
-
--!- file extension format type:
-    html - "*.html"
-    css - "*.css"
-    javaScript - "*.js"
-
 
 .
 .
