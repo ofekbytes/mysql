@@ -1,6 +1,7 @@
 ---[links.txt]---
 
 
+
 ---[mysql]---
 
 https://www.edureka.co/blog/mysql-tutorial/#DCL
@@ -8,7 +9,6 @@ https://www.edureka.co/blog/mysql-tutorial/#DCL
 
 https://www.mysqltutorial.org/
 
-https://www.w3schools.com/sql/
 
 https://www.tutorialspoint.com/mysql/index.htm
 
@@ -20,6 +20,19 @@ https://www.javatpoint.com/mysql-tutorial
 https://www.guru99.com/mysql-tutorial.html
 
 https://www.edureka.co/blog/mysql-tutorial/
+
+https://www.w3resource.com/mysql/mysql-tutorials.php
+
+https://www.tutorialspoint.com/mysql/mysql-delete-query.htm
+
+
+
+
+---[sql]---
+
+https://www.w3schools.com/sql/
+
+https://www.w3schools.com/sql/default.asp
 
 
 
