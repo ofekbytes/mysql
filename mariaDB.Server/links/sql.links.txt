@@ -1,0 +1,8 @@
+
+
+---[sql.links]---
+
+https://www.w3schools.com/sql/
+
+https://www.w3schools.com/sql/default.asp
+

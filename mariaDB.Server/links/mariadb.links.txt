@@ -3,3 +3,14 @@
 ---[mariadb.links]---
 
 
+// #1: //
+https://www.tutorialspoint.com/mariadb/index.htm
+
+// #2: //
+https://www.guru99.com/mariadb-tutorial-install.html
+
+// #3: //
+https://www.javatpoint.com/mariadb-tutorial
+
+// #4: //
+
