@@ -3,24 +3,21 @@
 MySql - 
 .
 .
-- level 1: mySql
-- level 1.1 - basic
+- 1. mySql
+- 1.01 - Sql DataBase Server Type
 
 
 .
 .
-- level 1: mySql
-- level 1.1 - ...
-.
-
-
-
+- 1. mySql - 
 
 - SQL is a standard language for storing, manipulating and retrieving data in databases.
   A database is a collection of data that is organized by subjects.
 
+.
+.
+- 1.01 - Sql DataBase Server Type - 
 
-- Sql DataBase Server Types: 
 -- mariaDb
 -- MySQL 
 -- SQL Server 
@@ -59,7 +56,7 @@ MySql -
 
 .
 .
-- level 1.1 - ...
+- 1.01 - ...
 .
 
 
