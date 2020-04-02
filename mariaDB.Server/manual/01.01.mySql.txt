@@ -11,8 +11,11 @@ MySql -
 .
 - 1. mySql - 
 
-- SQL is a standard language for storing, manipulating and retrieving data in databases.
-  A database is a collection of data that is organized by subjects.
+- SQL is 
+-- a standard language for storing, manipulating and retrieving data in databases.
+-- a database is a collection of data/tables that is organized by subjects.
+-- a table stores and displays data in a structured format (columns, rows) with a specific purpose.
+-- 
 
 .
 .
@@ -53,6 +56,12 @@ MySql -
 
 - TCL ( Transaction Control Language) is the consists of those commands which mainly deal with the transaction of the database.
 -- 
+
+
+- DQL (Data Query Language) is part of the base grouping of SQL sub-languages.
+-- Although often considered part of DML, 
+   the SQL SELECT statement is strictly speaking an example of DQL. 
+   When adding FROM or WHERE data manipulators to the SELECT statement the statement is then considered part of the DML.
 
 .
 .

@@ -2,6 +2,8 @@
 
 ---[mySql - buzzwords]---
 
+---[a]---
+
 
 ---[b]---
 
@@ -15,23 +17,47 @@
 
 - DDL -- (Data Definition Language) -- 
 -- ddl is a commands which are used to define the database.
--- <>
+-- ddl commands: 
+--- CREATE 
+--- DROP - 
+--- ALTER -
+--- TRUNCATE -
+--- COMMENT - 
+--- RENAME- 
+-- < https://en.wikipedia.org/wiki/Data_definition_language >
+
 
 - DML -- (Data Manipulation Language) -- 
 -- dml is a commands that deal with the manipulation of data present in the database.
--- <>
+-- < https://en.wikipedia.org/wiki/Data_manipulation_language >
+
 
 - DCL -- (Data Control Language) -- 
 -- dcl is a commands that deal with the rights, permissions and other controls of the database system.
--- <>
+-- < https://en.wikipedia.org/wiki/Data_control_language >
+
 
 - TCL -- (Transaction Control Language) --
 -- tcl is the consists of those commands which mainly deal with the transaction of the database.
--- <>
+-- < https://en.wikipedia.org/wiki/Transactional_Control_Language >
+
+
+- DQL (Data Query Language) is part of the base grouping of SQL sub-languages.
+-- Although often considered part of DML, 
+   the SQL SELECT statement is strictly speaking an example of DQL. 
+   When adding FROM or WHERE data manipulators to the SELECT statement the statement is then considered part of the DML.
+-- < https://en.wikipedia.org/wiki/Data_query_language >
+
 
 - DBMS -- (database management system) -- 
 -- dbms is
 -- <>
 
 
----[a]---
+---[s]---
+
+- select -
+
+-- < https://en.wikipedia.org/wiki/Select_(SQL) >
+
+

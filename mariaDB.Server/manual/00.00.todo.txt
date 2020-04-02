@@ -1,4 +1,16 @@
 
 ## todo ## 
 
-1. 
+1.  mariaDB path
+
+-- dataBase path
+
+-- services
+
+-- create a copy of dataBase
+--- file
+--- external storage
+--- clone
+
+-- multi cpu replicant
+-- mutti cpu thread mariaDB (grapes / tree)

@@ -70,3 +70,13 @@ https://mariadb.com/kb/en/show-create-user/
 http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
 
 
+
+---[cheat-sheet]---
+
+https://hackr.io/blog/mysql-cheat-sheet
+
+https://www.sqltutorial.org/sql-cheat-sheet
+
+
+
+
