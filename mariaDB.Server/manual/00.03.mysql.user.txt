@@ -21,3 +21,48 @@ select * from mysql.user;
 | localhost | admin   | *0013FCF463738B6082E2AE7562F153FAAE83D96F | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | N          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | auth_socket |                       | N                | N       |
 +-----------+---------+-------------------------------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-------------+-----------------------+------------------+---------+
 4 rows in set (0.00 sec)
+
+
+
+// create user //
+create user if not exists usr@demo identified by 'password'
+// +------------------+-----------------------+-----------+
+// | user             | plugin                | host      |
+// +------------------+-----------------------+-----------+
+// | usr              | mysql_native_password | demo      |
+// +------------------+-----------------------+-----------+
+
+create user test@test identified by 'password';
+// +------------------+-----------------------+-----------+
+// | user             | plugin                | host      |
+// +------------------+-----------------------+-----------+
+// | test             | mysql_native_password | test      |
+// +------------------+-----------------------+-----------+
+
+
+// erase user //
+
+mysql> drop user test@test;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+
+
+---[java]---
+
+//
+// java connection parameters: user + password + connection.
+
+//	private String dbUrl = "jdbc:mysql://localhost:3306/test1"; //with port: 3306
+//	private String dbUrl = "jdbc:mysql://localhost/test1";
+//	private String user = "jron";  //"dbadmin";
+//	private String password = "koskas@1974.com"; //"2Wsxcde3";
+//	private String stQuery = "select * from customer";
+
+
+
+
+
+

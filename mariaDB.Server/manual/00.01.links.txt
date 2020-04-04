@@ -38,16 +38,76 @@ https://www.w3schools.com/sql/default.asp
 
 ---[mariadb]---
 
-// #1: //
+// mariadb - tutorial
 https://www.tutorialspoint.com/mariadb/index.htm
 
-// #2: //
-https://www.guru99.com/mariadb-tutorial-install.html
-
-// #3: //
+// mariadb - tutorial
 https://www.javatpoint.com/mariadb-tutorial
 
-// #4: //
+// identifier-names
+https://mariadb.com/kb/en/identifier-names/
+
+// user authentication
+https://mariadb.com/kb/en/authentication-from-mariadb-104/
+
+// create user
+https://mariadb.com/kb/en/create-user/
+
+// show create user
+https://mariadb.com/kb/en/show-create-user/
+
+
+// set-password
+https://mariadb.com/kb/en/set-password/
+
+
+// drop-user
+https://mariadb.com/kb/en/drop-user/
+
+
+// alter-user
+https://mariadb.com/kb/en/alter-user/
+
+
+//grant
+https://mariadb.com/kb/en/grant/
+
+// show-grants
+https://mariadb.com/kb/en/show-grants/
+
+
+// show-privileges
+https://mariadb.com/kb/en/show-privileges/
+
+
+// mysql user table columns information
+// $ show columns from mysql.user;
+https://mariadb.com/kb/en/mysqluser-table/
+
+
+//## how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+
+
+
+
+
+
+---[not ordered]---
+
+https://mariadb.com/kb/en/authentication-from-mariadb-104/
+
+https://mariadb.com/kb/en/authentication-plugins/
+
+https://mariadb.com/kb/en/authentication-plugin-ed25519/
+
+https://mariadb.com/kb/en/password-validation-plugins/
+
+https://mariadb.com/kb/en/simple-password-check-plugin/
+
+https://mariadb.com/kb/en/authentication-plugin-mysql_native_password/
+
+https://mariadb.com/kb/en/troubleshooting-connection-issues/
 
 
 
@@ -61,22 +121,9 @@ https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-
 
 
 
----[create]---
-
-//## show-create-user
-https://mariadb.com/kb/en/show-create-user/
-
-//## how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
-http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
-
-
-
 ---[cheat-sheet]---
 
 https://hackr.io/blog/mysql-cheat-sheet
 
 https://www.sqltutorial.org/sql-cheat-sheet
-
-
-
 
